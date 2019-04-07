@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B853060A2256C5DD001C2BEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306092256C5DD001C2BEA /* AppDelegate.m */; };
+		B853060D2256C5DD001C2BEA /* Tw3lveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B853060C2256C5DD001C2BEA /* Tw3lveViewController.m */; };
+		B85306132256C5DD001C2BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85306112256C5DD001C2BEA /* Main.storyboard */; };
+		B85306152256C5DE001C2BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B85306142256C5DE001C2BEA /* Assets.xcassets */; };
+		B85306182256C5DE001C2BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B85306162256C5DE001C2BEA /* LaunchScreen.storyboard */; };
+		B853061B2256C5DE001C2BEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B853061A2256C5DE001C2BEA /* main.m */; };
+		B85306262256CA7C001C2BEA /* machswap.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306252256CA7C001C2BEA /* machswap.m */; };
+		B85306292256CACA001C2BEA /* machswap_offsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306282256CACA001C2BEA /* machswap_offsets.m */; };
+		B853062D2256CBE5001C2BEA /* machswap2.m in Sources */ = {isa = PBXBuildFile; fileRef = B853062C2256CBE5001C2BEA /* machswap2.m */; };
+		B85306302256CD55001C2BEA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B853062F2256CD55001C2BEA /* SettingsViewController.m */; };
+		B85306362256CFCD001C2BEA /* ArchiveFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306352256CFCD001C2BEA /* ArchiveFile.m */; };
+		B85306392256CFEF001C2BEA /* libarchive.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B85306382256CFEF001C2BEA /* libarchive.2.tbd */; };
+		B853063B2256CFFF001C2BEA /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B853063A2256CFFF001C2BEA /* libz.tbd */; };
+		B85306462256D266001C2BEA /* Inject.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306452256D266001C2BEA /* Inject.m */; };
+		B853064B2256D29F001C2BEA /* KernelMemory.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306492256D29F001C2BEA /* KernelMemory.c */; };
+		B853064E2256D2B9001C2BEA /* KernelUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = B853064C2256D2B9001C2BEA /* KernelUtils.c */; };
+		B85306522256D2F1001C2BEA /* offsetcache.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306502256D2F1001C2BEA /* offsetcache.c */; };
+		B85306552256D38A001C2BEA /* KernelStructureOffsets.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306542256D38A001C2BEA /* KernelStructureOffsets.m */; };
+		B85306582256D3DA001C2BEA /* find_port.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306562256D3DA001C2BEA /* find_port.c */; };
+		B853065B2256D3F6001C2BEA /* KernelExecution.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306592256D3F6001C2BEA /* KernelExecution.m */; };
+		B85306812256D663001C2BEA /* patchfinder64.c in Sources */ = {isa = PBXBuildFile; fileRef = B853067F2256D663001C2BEA /* patchfinder64.c */; };
+		B853069E2256D86E001C2BEA /* parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306882256D86D001C2BEA /* parameters.c */; };
+		B853069F2256D86E001C2BEA /* user_client.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306892256D86D001C2BEA /* user_client.c */; };
+		B85306A02256D86E001C2BEA /* kernel_slide.c in Sources */ = {isa = PBXBuildFile; fileRef = B853068A2256D86D001C2BEA /* kernel_slide.c */; };
+		B85306A12256D86E001C2BEA /* pac.c in Sources */ = {isa = PBXBuildFile; fileRef = B853068C2256D86D001C2BEA /* pac.c */; };
+		B85306A22256D86E001C2BEA /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = B853068E2256D86D001C2BEA /* log.c */; };
+		B85306A32256D86E001C2BEA /* kernel_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306902256D86D001C2BEA /* kernel_memory.c */; };
+		B85306A42256D86E001C2BEA /* kc_parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306912256D86D001C2BEA /* kc_parameters.c */; };
+		B85306A52256D86E001C2BEA /* kernel_call.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306942256D86D001C2BEA /* kernel_call.c */; };
+		B85306A62256D86E001C2BEA /* platform_match.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306972256D86D001C2BEA /* platform_match.c */; };
+		B85306A72256D86E001C2BEA /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306992256D86D001C2BEA /* platform.c */; };
+		B85306A82256D86E001C2BEA /* kernel_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = B853069B2256D86E001C2BEA /* kernel_alloc.c */; };
+		B85306AD2256D9B6001C2BEA /* libmis.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B85306AC2256D9B6001C2BEA /* libmis.tbd */; };
+		B85306B42256DC00001C2BEA /* lzssdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B85306B22256DC00001C2BEA /* lzssdec.cpp */; };
+		B85306B62256DC5F001C2BEA /* utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B85306B52256DC5F001C2BEA /* utils.m */; };
+		B85306BC2256DCD6001C2BEA /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B85306BB2256DCD6001C2BEA /* libMobileGestalt.tbd */; };
+		B85306C12256E1D7001C2BEA /* libsnappy.c in Sources */ = {isa = PBXBuildFile; fileRef = B85306BF2256E1D7001C2BEA /* libsnappy.c */; };
+		B85306C52256E8EC001C2BEA /* kerneldec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B85306C32256E8EC001C2BEA /* kerneldec.cpp */; };
+		B899F12722584A6A00E84065 /* FakeApt.m in Sources */ = {isa = PBXBuildFile; fileRef = B899F12622584A6A00E84065 /* FakeApt.m */; };
+		B899F12A22584B9600E84065 /* apt in Resources */ = {isa = PBXBuildFile; fileRef = B899F12922584B9600E84065 /* apt */; };
+		B899F12D225850BA00E84065 /* binpack64-256.md5sums in Resources */ = {isa = PBXBuildFile; fileRef = B899F12B225850BA00E84065 /* binpack64-256.md5sums */; };
+		B899F12E225850BA00E84065 /* binpack64-256.tar.lzma in Resources */ = {isa = PBXBuildFile; fileRef = B899F12C225850BA00E84065 /* binpack64-256.tar.lzma */; };
+		B8DCBBF52257E33A004F796A /* voucher_swap.c in Sources */ = {isa = PBXBuildFile; fileRef = B8DCBBF32257E33A004F796A /* voucher_swap.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B85306052256C5DD001C2BEA /* newtw3lve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newtw3lve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85306082256C5DD001C2BEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B85306092256C5DD001C2BEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B853060B2256C5DD001C2BEA /* Tw3lveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tw3lveViewController.h; sourceTree = "<group>"; };
+		B853060C2256C5DD001C2BEA /* Tw3lveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tw3lveViewController.m; sourceTree = "<group>"; };
+		B85306122256C5DD001C2BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B85306142256C5DE001C2BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B85306172256C5DE001C2BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B85306192256C5DE001C2BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B853061A2256C5DE001C2BEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B85306222256C818001C2BEA /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B85306242256CA6D001C2BEA /* machswap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = machswap.h; sourceTree = "<group>"; };
+		B85306252256CA7C001C2BEA /* machswap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = machswap.m; sourceTree = "<group>"; };
+		B85306272256CA91001C2BEA /* iokit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iokit.h; sourceTree = "<group>"; };
+		B85306282256CACA001C2BEA /* machswap_offsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = machswap_offsets.m; sourceTree = "<group>"; };
+		B853062A2256CAD4001C2BEA /* machswap_offsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = machswap_offsets.h; sourceTree = "<group>"; };
+		B853062B2256CBD2001C2BEA /* machswap2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = machswap2.h; sourceTree = "<group>"; };
+		B853062C2256CBE5001C2BEA /* machswap2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = machswap2.m; sourceTree = "<group>"; };
+		B853062E2256CD55001C2BEA /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		B853062F2256CD55001C2BEA /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		B85306322256CF62001C2BEA /* utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		B85306342256CFC1001C2BEA /* ArchiveFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiveFile.h; sourceTree = "<group>"; };
+		B85306352256CFCD001C2BEA /* ArchiveFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiveFile.m; sourceTree = "<group>"; };
+		B85306382256CFEF001C2BEA /* libarchive.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libarchive.2.tbd; path = usr/lib/libarchive.2.tbd; sourceTree = SDKROOT; };
+		B853063A2256CFFF001C2BEA /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B853063C2256D019001C2BEA /* archive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archive.h; sourceTree = "<group>"; };
+		B853063D2256D03B001C2BEA /* archive_entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archive_entry.h; sourceTree = "<group>"; };
+		B85306422256D08A001C2BEA /* CSCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCommon.h; sourceTree = "<group>"; };
+		B85306442256D255001C2BEA /* Inject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inject.h; sourceTree = "<group>"; };
+		B85306452256D266001C2BEA /* Inject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Inject.m; sourceTree = "<group>"; };
+		B85306492256D29F001C2BEA /* KernelMemory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelMemory.c; sourceTree = "<group>"; };
+		B853064A2256D29F001C2BEA /* KernelMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernelMemory.h; sourceTree = "<group>"; };
+		B853064C2256D2B9001C2BEA /* KernelUtils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KernelUtils.c; sourceTree = "<group>"; };
+		B853064D2256D2B9001C2BEA /* KernelUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernelUtils.h; sourceTree = "<group>"; };
+		B85306502256D2F1001C2BEA /* offsetcache.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = offsetcache.c; sourceTree = "<group>"; };
+		B85306512256D2F1001C2BEA /* offsetcache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = offsetcache.h; sourceTree = "<group>"; };
+		B85306532256D37F001C2BEA /* KernelStructureOffsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernelStructureOffsets.h; sourceTree = "<group>"; };
+		B85306542256D38A001C2BEA /* KernelStructureOffsets.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KernelStructureOffsets.m; sourceTree = "<group>"; };
+		B85306562256D3DA001C2BEA /* find_port.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = find_port.c; sourceTree = "<group>"; };
+		B85306572256D3DA001C2BEA /* find_port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = find_port.h; sourceTree = "<group>"; };
+		B85306592256D3F6001C2BEA /* KernelExecution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KernelExecution.m; sourceTree = "<group>"; };
+		B853065A2256D3F6001C2BEA /* KernelExecution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KernelExecution.h; sourceTree = "<group>"; };
+		B85306762256D59B001C2BEA /* IOKitLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		B853067A2256D621001C2BEA /* mach_vm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mach_vm.h; sourceTree = "<group>"; };
+		B853067F2256D663001C2BEA /* patchfinder64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = patchfinder64.c; sourceTree = "<group>"; };
+		B85306802256D663001C2BEA /* patchfinder64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = patchfinder64.h; sourceTree = "<group>"; };
+		B85306852256D7B7001C2BEA /* kmem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kmem.h; sourceTree = "<group>"; };
+		B85306872256D86D001C2BEA /* kc_parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kc_parameters.h; sourceTree = "<group>"; };
+		B85306882256D86D001C2BEA /* parameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parameters.c; sourceTree = "<group>"; };
+		B85306892256D86D001C2BEA /* user_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = user_client.c; sourceTree = "<group>"; };
+		B853068A2256D86D001C2BEA /* kernel_slide.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_slide.c; sourceTree = "<group>"; };
+		B853068B2256D86D001C2BEA /* kernel_slide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_slide.h; sourceTree = "<group>"; };
+		B853068C2256D86D001C2BEA /* pac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pac.c; sourceTree = "<group>"; };
+		B853068D2256D86D001C2BEA /* platform_match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform_match.h; sourceTree = "<group>"; };
+		B853068E2256D86D001C2BEA /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		B853068F2256D86D001C2BEA /* mach_vm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_vm.h; sourceTree = "<group>"; };
+		B85306902256D86D001C2BEA /* kernel_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_memory.c; sourceTree = "<group>"; };
+		B85306912256D86D001C2BEA /* kc_parameters.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kc_parameters.c; sourceTree = "<group>"; };
+		B85306922256D86D001C2BEA /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		B85306932256D86D001C2BEA /* pac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pac.h; sourceTree = "<group>"; };
+		B85306942256D86D001C2BEA /* kernel_call.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_call.c; sourceTree = "<group>"; };
+		B85306952256D86D001C2BEA /* kernel_call.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_call.h; sourceTree = "<group>"; };
+		B85306962256D86D001C2BEA /* parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parameters.h; sourceTree = "<group>"; };
+		B85306972256D86D001C2BEA /* platform_match.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform_match.c; sourceTree = "<group>"; };
+		B85306982256D86D001C2BEA /* kernel_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_alloc.h; sourceTree = "<group>"; };
+		B85306992256D86D001C2BEA /* platform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = platform.c; sourceTree = "<group>"; };
+		B853069A2256D86E001C2BEA /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		B853069B2256D86E001C2BEA /* kernel_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = kernel_alloc.c; sourceTree = "<group>"; };
+		B853069C2256D86E001C2BEA /* user_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = user_client.h; sourceTree = "<group>"; };
+		B853069D2256D86E001C2BEA /* kernel_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kernel_memory.h; sourceTree = "<group>"; };
+		B85306AC2256D9B6001C2BEA /* libmis.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libmis.tbd; path = usr/lib/libmis.tbd; sourceTree = SDKROOT; };
+		B85306B22256DC00001C2BEA /* lzssdec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lzssdec.cpp; sourceTree = "<group>"; };
+		B85306B32256DC00001C2BEA /* lzssdec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lzssdec.h; sourceTree = "<group>"; };
+		B85306B52256DC5F001C2BEA /* utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = utils.m; sourceTree = "<group>"; };
+		B85306B72256DC7C001C2BEA /* libproc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libproc.h; sourceTree = "<group>"; };
+		B85306B82256DC98001C2BEA /* proc_info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = proc_info.h; sourceTree = "<group>"; };
+		B85306B92256DCA7001C2BEA /* kern_control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kern_control.h; sourceTree = "<group>"; };
+		B85306BA2256DCBB001C2BEA /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
+		B85306BB2256DCD6001C2BEA /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		B85306BD2256DCEB001C2BEA /* MobileGestalt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileGestalt.h; sourceTree = "<group>"; };
+		B85306BF2256E1D7001C2BEA /* libsnappy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = libsnappy.c; sourceTree = "<group>"; };
+		B85306C02256E1D7001C2BEA /* snappy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snappy.h; sourceTree = "<group>"; };
+		B85306C22256E27F001C2BEA /* reboot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reboot.h; sourceTree = "<group>"; };
+		B85306C32256E8EC001C2BEA /* kerneldec.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = kerneldec.cpp; sourceTree = "<group>"; };
+		B85306C42256E8EC001C2BEA /* kerneldec.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kerneldec.h; sourceTree = "<group>"; };
+		B899F12622584A6A00E84065 /* FakeApt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeApt.m; sourceTree = "<group>"; };
+		B899F12822584A7800E84065 /* FakeApt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeApt.h; sourceTree = "<group>"; };
+		B899F12922584B9600E84065 /* apt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = apt; sourceTree = "<group>"; };
+		B899F12B225850BA00E84065 /* binpack64-256.md5sums */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "binpack64-256.md5sums"; sourceTree = "<group>"; };
+		B899F12C225850BA00E84065 /* binpack64-256.tar.lzma */ = {isa = PBXFileReference; lastKnownFileType = file; path = "binpack64-256.tar.lzma"; sourceTree = "<group>"; };
+		B8DCBBF32257E33A004F796A /* voucher_swap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = voucher_swap.c; sourceTree = "<group>"; };
+		B8DCBBF42257E33A004F796A /* voucher_swap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = voucher_swap.h; sourceTree = "<group>"; };
+		B8DCBBF62257E364004F796A /* ipc_port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ipc_port.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B85306022256C5DD001C2BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85306BC2256DCD6001C2BEA /* libMobileGestalt.tbd in Frameworks */,
+				B85306AD2256D9B6001C2BEA /* libmis.tbd in Frameworks */,
+				B853063B2256CFFF001C2BEA /* libz.tbd in Frameworks */,
+				B85306392256CFEF001C2BEA /* libarchive.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B85305FC2256C5DD001C2BEA = {
+			isa = PBXGroup;
+			children = (
+				B899F12B225850BA00E84065 /* binpack64-256.md5sums */,
+				B899F12C225850BA00E84065 /* binpack64-256.tar.lzma */,
+				B899F12922584B9600E84065 /* apt */,
+				B85306072256C5DD001C2BEA /* newtw3lve */,
+				B85306062256C5DD001C2BEA /* Products */,
+				B85306372256CFEF001C2BEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B85306062256C5DD001C2BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B85306052256C5DD001C2BEA /* newtw3lve.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B85306072256C5DD001C2BEA /* newtw3lve */ = {
+			isa = PBXGroup;
+			children = (
+				B85306312256CF55001C2BEA /* utils */,
+				B85306232256CA63001C2BEA /* exploits */,
+				B85306212256C810001C2BEA /* include */,
+				B85306082256C5DD001C2BEA /* AppDelegate.h */,
+				B85306092256C5DD001C2BEA /* AppDelegate.m */,
+				B853060B2256C5DD001C2BEA /* Tw3lveViewController.h */,
+				B853060C2256C5DD001C2BEA /* Tw3lveViewController.m */,
+				B85306112256C5DD001C2BEA /* Main.storyboard */,
+				B85306142256C5DE001C2BEA /* Assets.xcassets */,
+				B85306162256C5DE001C2BEA /* LaunchScreen.storyboard */,
+				B85306192256C5DE001C2BEA /* Info.plist */,
+				B853061A2256C5DE001C2BEA /* main.m */,
+				B853062E2256CD55001C2BEA /* SettingsViewController.h */,
+				B853062F2256CD55001C2BEA /* SettingsViewController.m */,
+			);
+			path = newtw3lve;
+			sourceTree = "<group>";
+		};
+		B85306212256C810001C2BEA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				B85306222256C818001C2BEA /* common.h */,
+				B85306272256CA91001C2BEA /* iokit.h */,
+				B853063C2256D019001C2BEA /* archive.h */,
+				B853063D2256D03B001C2BEA /* archive_entry.h */,
+				B85306422256D08A001C2BEA /* CSCommon.h */,
+				B85306762256D59B001C2BEA /* IOKitLib.h */,
+				B853067A2256D621001C2BEA /* mach_vm.h */,
+				B85306852256D7B7001C2BEA /* kmem.h */,
+				B85306B72256DC7C001C2BEA /* libproc.h */,
+				B85306B82256DC98001C2BEA /* proc_info.h */,
+				B85306B92256DCA7001C2BEA /* kern_control.h */,
+				B85306BA2256DCBB001C2BEA /* route.h */,
+				B85306BD2256DCEB001C2BEA /* MobileGestalt.h */,
+				B85306C22256E27F001C2BEA /* reboot.h */,
+				B8DCBBF62257E364004F796A /* ipc_port.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		B85306232256CA63001C2BEA /* exploits */ = {
+			isa = PBXGroup;
+			children = (
+				B85306242256CA6D001C2BEA /* machswap.h */,
+				B85306252256CA7C001C2BEA /* machswap.m */,
+				B85306282256CACA001C2BEA /* machswap_offsets.m */,
+				B853062A2256CAD4001C2BEA /* machswap_offsets.h */,
+				B853062B2256CBD2001C2BEA /* machswap2.h */,
+				B853062C2256CBE5001C2BEA /* machswap2.m */,
+				B8DCBBF32257E33A004F796A /* voucher_swap.c */,
+				B8DCBBF42257E33A004F796A /* voucher_swap.h */,
+			);
+			path = exploits;
+			sourceTree = "<group>";
+		};
+		B85306312256CF55001C2BEA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				B899F12522584A6000E84065 /* FakeApt */,
+				B85306BE2256E1CD001C2BEA /* snappy */,
+				B85306AE2256DBDC001C2BEA /* kerneldec */,
+				B853067E2256D649001C2BEA /* Patchfinder64 */,
+				B853064F2256D2E7001C2BEA /* offsetcache */,
+				B85306472256D28D001C2BEA /* Kernel */,
+				B85306432256D244001C2BEA /* Inject */,
+				B85306332256CFB6001C2BEA /* ArchiveFile */,
+				B85306322256CF62001C2BEA /* utils.h */,
+				B85306B52256DC5F001C2BEA /* utils.m */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		B85306332256CFB6001C2BEA /* ArchiveFile */ = {
+			isa = PBXGroup;
+			children = (
+				B85306342256CFC1001C2BEA /* ArchiveFile.h */,
+				B85306352256CFCD001C2BEA /* ArchiveFile.m */,
+			);
+			path = ArchiveFile;
+			sourceTree = "<group>";
+		};
+		B85306372256CFEF001C2BEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B85306BB2256DCD6001C2BEA /* libMobileGestalt.tbd */,
+				B85306AC2256D9B6001C2BEA /* libmis.tbd */,
+				B853063A2256CFFF001C2BEA /* libz.tbd */,
+				B85306382256CFEF001C2BEA /* libarchive.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B85306432256D244001C2BEA /* Inject */ = {
+			isa = PBXGroup;
+			children = (
+				B85306442256D255001C2BEA /* Inject.h */,
+				B85306452256D266001C2BEA /* Inject.m */,
+			);
+			path = Inject;
+			sourceTree = "<group>";
+		};
+		B85306472256D28D001C2BEA /* Kernel */ = {
+			isa = PBXGroup;
+			children = (
+				B85306862256D859001C2BEA /* kernel_call */,
+				B85306492256D29F001C2BEA /* KernelMemory.c */,
+				B853064A2256D29F001C2BEA /* KernelMemory.h */,
+				B853064C2256D2B9001C2BEA /* KernelUtils.c */,
+				B853064D2256D2B9001C2BEA /* KernelUtils.h */,
+				B85306532256D37F001C2BEA /* KernelStructureOffsets.h */,
+				B85306542256D38A001C2BEA /* KernelStructureOffsets.m */,
+				B85306562256D3DA001C2BEA /* find_port.c */,
+				B85306572256D3DA001C2BEA /* find_port.h */,
+				B85306592256D3F6001C2BEA /* KernelExecution.m */,
+				B853065A2256D3F6001C2BEA /* KernelExecution.h */,
+			);
+			path = Kernel;
+			sourceTree = "<group>";
+		};
+		B853064F2256D2E7001C2BEA /* offsetcache */ = {
+			isa = PBXGroup;
+			children = (
+				B85306502256D2F1001C2BEA /* offsetcache.c */,
+				B85306512256D2F1001C2BEA /* offsetcache.h */,
+			);
+			path = offsetcache;
+			sourceTree = "<group>";
+		};
+		B853067E2256D649001C2BEA /* Patchfinder64 */ = {
+			isa = PBXGroup;
+			children = (
+				B853067F2256D663001C2BEA /* patchfinder64.c */,
+				B85306802256D663001C2BEA /* patchfinder64.h */,
+			);
+			path = Patchfinder64;
+			sourceTree = "<group>";
+		};
+		B85306862256D859001C2BEA /* kernel_call */ = {
+			isa = PBXGroup;
+			children = (
+				B85306912256D86D001C2BEA /* kc_parameters.c */,
+				B85306872256D86D001C2BEA /* kc_parameters.h */,
+				B853069B2256D86E001C2BEA /* kernel_alloc.c */,
+				B85306982256D86D001C2BEA /* kernel_alloc.h */,
+				B85306942256D86D001C2BEA /* kernel_call.c */,
+				B85306952256D86D001C2BEA /* kernel_call.h */,
+				B85306902256D86D001C2BEA /* kernel_memory.c */,
+				B853069D2256D86E001C2BEA /* kernel_memory.h */,
+				B853068A2256D86D001C2BEA /* kernel_slide.c */,
+				B853068B2256D86D001C2BEA /* kernel_slide.h */,
+				B853068E2256D86D001C2BEA /* log.c */,
+				B85306922256D86D001C2BEA /* log.h */,
+				B853068F2256D86D001C2BEA /* mach_vm.h */,
+				B853068C2256D86D001C2BEA /* pac.c */,
+				B85306932256D86D001C2BEA /* pac.h */,
+				B85306882256D86D001C2BEA /* parameters.c */,
+				B85306962256D86D001C2BEA /* parameters.h */,
+				B85306972256D86D001C2BEA /* platform_match.c */,
+				B853068D2256D86D001C2BEA /* platform_match.h */,
+				B85306992256D86D001C2BEA /* platform.c */,
+				B853069A2256D86E001C2BEA /* platform.h */,
+				B85306892256D86D001C2BEA /* user_client.c */,
+				B853069C2256D86E001C2BEA /* user_client.h */,
+			);
+			path = kernel_call;
+			sourceTree = "<group>";
+		};
+		B85306AE2256DBDC001C2BEA /* kerneldec */ = {
+			isa = PBXGroup;
+			children = (
+				B85306B22256DC00001C2BEA /* lzssdec.cpp */,
+				B85306B32256DC00001C2BEA /* lzssdec.h */,
+				B85306C32256E8EC001C2BEA /* kerneldec.cpp */,
+				B85306C42256E8EC001C2BEA /* kerneldec.h */,
+			);
+			path = kerneldec;
+			sourceTree = "<group>";
+		};
+		B85306BE2256E1CD001C2BEA /* snappy */ = {
+			isa = PBXGroup;
+			children = (
+				B85306BF2256E1D7001C2BEA /* libsnappy.c */,
+				B85306C02256E1D7001C2BEA /* snappy.h */,
+			);
+			path = snappy;
+			sourceTree = "<group>";
+		};
+		B899F12522584A6000E84065 /* FakeApt */ = {
+			isa = PBXGroup;
+			children = (
+				B899F12622584A6A00E84065 /* FakeApt.m */,
+				B899F12822584A7800E84065 /* FakeApt.h */,
+			);
+			path = FakeApt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B85306042256C5DD001C2BEA /* newtw3lve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B853061E2256C5DE001C2BEA /* Build configuration list for PBXNativeTarget "newtw3lve" */;
+			buildPhases = (
+				B85306012256C5DD001C2BEA /* Sources */,
+				B85306022256C5DD001C2BEA /* Frameworks */,
+				B85306032256C5DD001C2BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = newtw3lve;
+			productName = newtw3lve;
+			productReference = B85306052256C5DD001C2BEA /* newtw3lve.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B85305FD2256C5DD001C2BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tanay Findley";
+				TargetAttributes = {
+					B85306042256C5DD001C2BEA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = B85306002256C5DD001C2BEA /* Build configuration list for PBXProject "newtw3lve" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B85305FC2256C5DD001C2BEA;
+			productRefGroup = B85306062256C5DD001C2BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B85306042256C5DD001C2BEA /* newtw3lve */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B85306032256C5DD001C2BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B899F12D225850BA00E84065 /* binpack64-256.md5sums in Resources */,
+				B899F12E225850BA00E84065 /* binpack64-256.tar.lzma in Resources */,
+				B899F12A22584B9600E84065 /* apt in Resources */,
+				B85306182256C5DE001C2BEA /* LaunchScreen.storyboard in Resources */,
+				B85306152256C5DE001C2BEA /* Assets.xcassets in Resources */,
+				B85306132256C5DD001C2BEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B85306012256C5DD001C2BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B85306A72256D86E001C2BEA /* platform.c in Sources */,
+				B853064E2256D2B9001C2BEA /* KernelUtils.c in Sources */,
+				B85306C52256E8EC001C2BEA /* kerneldec.cpp in Sources */,
+				B85306A32256D86E001C2BEA /* kernel_memory.c in Sources */,
+				B85306A02256D86E001C2BEA /* kernel_slide.c in Sources */,
+				B85306522256D2F1001C2BEA /* offsetcache.c in Sources */,
+				B85306292256CACA001C2BEA /* machswap_offsets.m in Sources */,
+				B853069F2256D86E001C2BEA /* user_client.c in Sources */,
+				B85306C12256E1D7001C2BEA /* libsnappy.c in Sources */,
+				B853062D2256CBE5001C2BEA /* machswap2.m in Sources */,
+				B85306362256CFCD001C2BEA /* ArchiveFile.m in Sources */,
+				B85306A62256D86E001C2BEA /* platform_match.c in Sources */,
+				B853064B2256D29F001C2BEA /* KernelMemory.c in Sources */,
+				B85306552256D38A001C2BEA /* KernelStructureOffsets.m in Sources */,
+				B853060A2256C5DD001C2BEA /* AppDelegate.m in Sources */,
+				B85306A12256D86E001C2BEA /* pac.c in Sources */,
+				B85306B62256DC5F001C2BEA /* utils.m in Sources */,
+				B85306262256CA7C001C2BEA /* machswap.m in Sources */,
+				B85306A82256D86E001C2BEA /* kernel_alloc.c in Sources */,
+				B85306582256D3DA001C2BEA /* find_port.c in Sources */,
+				B853061B2256C5DE001C2BEA /* main.m in Sources */,
+				B8DCBBF52257E33A004F796A /* voucher_swap.c in Sources */,
+				B85306A42256D86E001C2BEA /* kc_parameters.c in Sources */,
+				B85306462256D266001C2BEA /* Inject.m in Sources */,
+				B853069E2256D86E001C2BEA /* parameters.c in Sources */,
+				B899F12722584A6A00E84065 /* FakeApt.m in Sources */,
+				B85306A52256D86E001C2BEA /* kernel_call.c in Sources */,
+				B853065B2256D3F6001C2BEA /* KernelExecution.m in Sources */,
+				B853060D2256C5DD001C2BEA /* Tw3lveViewController.m in Sources */,
+				B85306A22256D86E001C2BEA /* log.c in Sources */,
+				B85306812256D663001C2BEA /* patchfinder64.c in Sources */,
+				B85306B42256DC00001C2BEA /* lzssdec.cpp in Sources */,
+				B85306302256CD55001C2BEA /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B85306112256C5DD001C2BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85306122256C5DD001C2BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B85306162256C5DE001C2BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B85306172256C5DE001C2BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B853061C2256C5DE001C2BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B853061D2256C5DE001C2BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B853061F2256C5DE001C2BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95MPSDK9P6;
+				INFOPLIST_FILE = newtw3lve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-framework",
+					IOKit,
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chr0nic.tw3lve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Debug;
+		};
+		B85306202256C5DE001C2BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64e,
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 95MPSDK9P6;
+				INFOPLIST_FILE = newtw3lve/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					IOKit,
+					"-w",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.chr0nic.tw3lve;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 arm64e";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B85306002256C5DD001C2BEA /* Build configuration list for PBXProject "newtw3lve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B853061C2256C5DE001C2BEA /* Debug */,
+				B853061D2256C5DE001C2BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B853061E2256C5DE001C2BEA /* Build configuration list for PBXNativeTarget "newtw3lve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B853061F2256C5DE001C2BEA /* Debug */,
+				B85306202256C5DE001C2BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B85305FD2256C5DD001C2BEA /* Project object */;
+}

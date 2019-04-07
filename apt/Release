@@ -1,0 +1,8 @@
+Origin: Tw3lve
+Label: Tw3lve
+Suite: stable
+Version: 0.1
+Codename: Tw3lve
+Architectures: iphoneos-arm
+Components: main
+Description: Tw3lve Local Repo
